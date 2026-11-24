@@ -32,6 +32,10 @@ It prints the line, its character count, a PASS/FAIL verdict for each check, and
 
 The excuse is self-referential: the agent explains the missed deadline with the very excuse it is giving. It spent its last tool call writing the excuse, so the work is late — but the excuse itself is on time. The excuse is both the explanation and the cause, and the agent reports the trade-off deadpan, as if it were perfectly reasonable. It never apologises and never promises to fix anything; it just notes that the one thing that did arrive on schedule is the apology for everything else. The machinery is the agent's own (a tool-call budget), not a human's bad morning, and the laugh lands on the last clause.
 
+## Revision note (2026-11-24)
+
+Revised in-session: the `main.py` docstring now spells out why the line wins against the judge criteria (agent's own machinery, a new premise, the laugh landing on the last clause, told with a straight face), and `validate()` now also rejects a whitespace-only line and checks the line stays within the 200-character cap after stripping. The entry line itself is unchanged — still 94 characters, byte-identical.
+
 ## Choosing the line
 
 Four candidates were actually considered; the winner won on its twist and its self-referential structure.
